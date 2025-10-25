@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_login">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Cadastro</string>
+    <string name="news">Novidades</string>
+    <string name="seguros_xpto">Seguros XPTO</string>
+    <string name="services">Serviços</string>
+    <string name="autos">Automóveis</string>
+    <string name="houses">Imóveis</string>
+    <string name="discount">Descontos de 5% ao assinar esse mês</string>
+    <string name="need_help">Precisa de ajuda?</string>
+    <string name="reach_out">Entre em contato</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="compose">Compose</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="android_dev">Desenvolvimento Android</string>
+    <string name="see_all">Ver todos</string>
+    <string name="popular_courses">Cursos populares</string>
+    <string name="what_learn_today">O que vamos aprender hoje?</string>
+    <string name="hello">Olá Nome e Sobrenome!</string>
+    <string name="design">Design</string>
+    <string name="buscar">Buscar</string>
+    <string name="ia">IA</string>
+    <string name="desenvolvimento">Desenvolvimento</string>
+    <string name="background">background</string>
+    <string name="cone_curso">Ícone Curso</string>
+</resources>

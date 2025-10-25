@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seguros_xpto"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/services"
+        android:textSize="22sp"
+        android:layout_gravity="start" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_neutral10"
+            android:text="@string/autos"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_neutral10"
+            android:text="@string/houses"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        android:textSize="22sp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:textSize="14sp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_help"
+        android:textSize="22sp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="12dp"/>
+    
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="@string/reach_out"
+        android:textColorHint="@color/white"
+        android:textSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_green"/>
+
+    <EditText
+        android:id="@+id/login_field"
+        android:layout_marginTop="50dp"
+        style="@style/StyledEditText"
+        android:autofillHints="emailAddress"
+        android:layout_marginHorizontal="16dp"
+        android:hint="E-mail" />
+
+    <EditText
+        android:layout_below="@id/login_field"
+        android:id="@+id/password_field"
+        style="@style/StyledEditText"
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Senha"/>
+
+    <View
+        android:id="@+id/middle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/StyledLoginBtn"
+        android:layout_below="@id/password_field"
+        android:layout_width="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/middle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/btn_login" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/StyledLoginBtn"
+        android:layout_below="@id/password_field"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/middle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/btn_register" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_green"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/login_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_login"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        style="@style/StyledEditText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_password"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        style="@style/StyledEditText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/StyledLoginBtn"
+            android:hint="@string/btn_login" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/StyledLoginBtn"
+            android:hint="@string/btn_register"/>
+
+    </LinearLayout>
+
+</LinearLayout>

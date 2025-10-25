@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeRelativeLayoutActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_learn_today"
+        android:layout_below="@id/text_welcome"
+        android:layout_marginTop="26dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/image_dev"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/desenvolvimento"
+        android:src="@drawable/image_development"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@id/view_center"
+        android:layout_alignParentStart="true"
+    />
+
+    <ImageView
+        android:id="@+id/image_design"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/design"
+        android:src="@drawable/image_design"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/view_center"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/image_ai"
+        android:contentDescription="@string/ia"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/image_ai"
+        android:layout_below="@id/image_dev"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@id/view_center"
+        android:layout_alignParentStart="true"
+    />
+
+    <ImageView
+        android:id="@+id/image_explore"
+        android:contentDescription="@string/buscar"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/image_explore"
+        android:layout_below="@id/image_dev"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/view_center"
+        android:layout_alignParentEnd="true"/>
+    
+    <TextView
+        android:id="@+id/text_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popular_courses"
+        android:layout_below="@id/image_ai"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all"
+        android:layout_below="@id/image_ai"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_background"
+        android:layout_below="@id/text_courses"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_dev"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignTop="@id/background"
+        android:layout_alignBottom="@id/background"
+        android:gravity="center"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_android_black_24dp"
+        android:layout_alignTop="@id/background"
+        android:layout_alignBottom="@id/background"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/cone_curso"/>
+    
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a tecnologia"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_linear_layout"
+                style="@style/StyledLoginBtn"
+                android:hint="@string/linear_layout" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btn_compose"
+                style="@style/StyledLoginBtn"
+                android:hint="@string/compose" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_relative_layout"
+                style="@style/StyledLoginBtn"
+                android:hint="@string/relative_layout" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btn_constraint"
+                style="@style/StyledLoginBtn"
+                android:hint="@string/constraint_layout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
